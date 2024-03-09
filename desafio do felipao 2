@@ -1,0 +1,33 @@
+function matches (victory, defeat){
+
+let result = victory - defeat 
+
+return result
+
+}
+
+function rank(){
+
+let resultRank = matches (440,200)
+let nivel = ""
+
+if (resultRank <= 10){
+	nivel= "ferro"
+   }else if (resultRank <=20){
+    nivel= "bronze"
+   }else if(resultRank <=50){
+   nivel= "prata"
+   }else if(resultRank <=80){
+   nivel= "ouro"
+   }else if(resultRank <=90){
+   nivel = "diamante"
+   }else if(resultRank <=100){
+   nivel = "lendário"
+   }else if (resultRank >= 100){
+   nivel = "imortal"
+   } 
+   return  `O Herói tem de saldo de ${resultRank} e está no nível de ${nivel}`
+   }
+   
+   console.log(rank())
+   
